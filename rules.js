@@ -101,8 +101,8 @@ function begin_play(){
 		} else{
 			started = true;
 			turn = 1;
-			document.getElementById("player1_id").value = document.getElementById("player1_id").value + " (X)";
-			document.getElementById("player2_id").value = document.getElementById("player2_id").value + " (O)";
+			document.getElementById("player1_id").value = document.getElementById("player1_id").value;
+			document.getElementById("player2_id").value = document.getElementById("player2_id").value;
 
 			document.getElementById("player1_id").disabled = true;
 			document.getElementById("player2_id").disabled = true;
@@ -189,7 +189,7 @@ function play() {
 		checkGameState();
 
 	} else{
-		alert("invalid move");
+		alert("Invalid move");
 	}
 }
 
